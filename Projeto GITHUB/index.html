@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Aroma & Arte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header e Navegação -->
+    <header class="header">
+        <div class="logo">
+            <h1>Aroma & Arte</h1>
+        </div>
+        <nav class="navbar">
+            <a href="#home">Início</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#sobre">Sobre Nós</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Seção Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>O sabor autêntico do café artesanal</h2>
+            <p>Grãos selecionados das melhores fazendas, torrados diariamente com perfeição.</p>
+            <a href="#cardapio" class="btn">Ver Cardápio</a>
+        </div>
+    </section>
+
+    <!-- Seção do Cardápio -->
+    <section id="cardapio" class="section">
+        <h2>Nosso Cardápio</h2>
+        
+        <!-- Botões de Filtro -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="todos">Todos</button>
+            <button class="filter-btn" data-category="quentes">Quentes</button>
+            <button class="filter-btn" data-category="gelados">Gelados</button>
+            <button class="filter-btn" data-category="comidas">Salgados</button>
+            <button class="filter-btn" data-category="doces">Doces</button>
+        </div>
+
+        <!-- T4 -->
+        <div class="menu-grid" id="menuGrid">
+            
+            <!-- Opção 1: Quente -->
+            <div class="menu-card" data-category="quentes">
+                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400" alt="Espresso Duplo">
+                <div class="card-info">
+                    <h3>Espresso Duplo Especial</h3>
+                    <p>Dose dupla de café encorpado com notas de chocolate amargo e avelã.</p>
+                    <span class="price">R$ 11,00</span>
+                </div>
+            </div>
+
+            <!-- Opção 2: Quente -->
+            <div class="menu-card" data-category="quentes">
+                <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?w=400" alt="Mocha de Chocolate Belga">
+                <div class="card-info">
+                    <h3>Mocha de Chocolate Belga</h3>
+                    <p>Espresso, leite vaporizado e calda artesanal de chocolate 70% cacau.</p>
+                    <span class="price">R$ 16,50</span>
+                </div>
+            </div>
+
+            <!-- Opção 3: Gelado -->
+            <div class="menu-card" data-category="gelados">
+                <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=400" alt="Cold Brew Tônica">
+                <div class="card-info">
+                    <h3>Cold Brew Tônica</h3>
+                    <p>Café extraído a frio por 18 horas, servido com tônica e infusão de laranja.</p>
+                    <span class="price">R$ 15,00</span>
+                </div>
+            </div>
+
+            <!-- Opção 4: Gelado -->
+            <div class="menu-card" data-category="gelados">
+                <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400" alt="Frappé de Caramelo">
+                <div class="card-info">
+                    <h3>Frappé de Caramelo Salgado</h3>
+                    <p>Bebida congelada batida com café, leite, chantilly e calda de caramelo salgado.</p>
+                    <span class="price">R$ 18,00</span>
+                </div>
+            </div>
+
+            <!-- Opção 5: Salgado -->
+            <div class="menu-card" data-category="comidas">
+                <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400" alt="Avocado Toast">
+                <div class="card-info">
+                    <h3>Avocado Toast Especial</h3>
+                    <p>Pão de fermentação natural, creme de abacate temperado e ovo pochê.</p>
+                    <span class="price">R$ 22,00</span>
+                </div>
+            </div>
+
+            <!-- Opção 6: Salgado -->
+            <div class="menu-card" data-category="comidas">
+                <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400" alt="Croissant Folhado">
+                <div class="card-info">
+                    <h3>Croissant de Queijo Brie e Presunto</h3>
+                    <p>Massa folhada amanteigada recheada com queijo brie derretido e presunto cru.</p>
+                    <span class="price">R$ 19,50</span>
+                </div>
+            </div>
+
+            <!-- Opção 7: Doce -->
+            <div class="menu-card" data-category="doces">
+                <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=400" alt="Cheesecake de Frutas Vermelhas">
+                <div class="card-info">
+                    <h3>Cheesecake de Frutas Vermelhas</h3>
+                    <p>Base crocante de biscoito com creme suave e cobertura artesanal de morango e amora.</p>
+                    <span class="price">R$ 17,00</span>
+                </div>
+            </div>
+
+            <!-- Opção 8: Doce -->
+            <div class="menu-card" data-category="doces">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400" alt="Cinnamon Roll">
+                <div class="card-info">
+                    <h3>Cinnamon Roll</h3>
+                    <p>Pão doce macio recheado com canela e coberto com cobertura de cream cheese.</p>
+                    <span class="price">R$ 13,50</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Seção Sobre Nós -->
+    <section id="sobre" class="section bg-alt">
+        <div class="sobre-container">
+            <h2>Sobre a Aroma & Arte</h2>
+            <p class="sobre-lead">Nascida da paixão pelo café artesanal, nossa casa é um ponto de encontro para quem valoriza sabor, aconchego e bons momentos.</p>
+            
+            <div class="sobre-grid">
+                <div class="sobre-card">
+                    <h3>Nossa História</h3>
+                    <p>Fundado em 2021, o Café Aroma & Arte começou como um projeto de dois amigos apaixonados pela cultura do café. O que começou como uma microtorrefação urbana transformou-se em um espaço completo focado na experiência sensorial e na alta gastronomia.</p>
+                </div>
+
+                <div class="sobre-card">
+                    <h3>Grãos Selecionados & Torra Fresca</h3>
+                    <p>Trabalhamos exclusivamente com grãos 100% Arábica de alta altitude, vindos das melhores regiões cafeeiras do Brasil (Mogiana, Sul de Minas e Cerrado Mineiro). Cada lote é torrado semanalmente para garantir o pico de aroma e notas de degustação marcantes.</p>
+                </div>
+
+                <div class="sobre-card">
+                    <h3>Compromisso Sustentável</h3>
+                    <p>Apoiamos o comércio justo (Fair Trade) comprando diretamente de pequenos produtores da agricultura familiar. Além disso, 100% das nossas embalagens são biodegradáveis e doamos a borra de café utilizada para hortas comunitárias locais.</p>
+                </div>
+
+                <div class="sobre-card">
+                    <h3>Nosso Espaço</h3>
+                    <p>Pensado para ser uma extensão da sua casa, nosso ambiente conta com Wi-Fi de alta velocidade, tomadas em todas as mesas para home office, área pet friendly e uma curadoria musical suave ideal para momentos de foco ou descontração.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section id="contato" class="section">
+        <h2>Faça seu Pedido ou Contato</h2>
+        <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem ou Pedido Especial:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+        <p id="formFeedback" class="feedback-msg"></p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2026 Café Aroma & Arte — Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
